@@ -1,0 +1,228 @@
+---
+title: "Análise"
+output: pdf_document
+---
+
+
+```{r}
+options(OutDec = ",")
+library(ggplot2)
+library(gridExtra)
+```
+
+# Ler atalah e criar função para classificar
+
+```{r}
+atalah <- read.table(file = "atalah.txt", sep = " ", header = T, stringsAsFactors = F, dec = ",")
+
+
+# Esperando informação sobre semanas 
+estado.nutricional <- function(semana, imc, tab.atalah){
+	if(semana < 6){
+		stop("não pode ser feito com gestante < 6 semanas")
+	} else if (semana == 7 || semana == 9){
+		semana <- semana + 1
+	}
+
+	filtro <- tab.atalah[match(semana, tab.atalah$Semana_gestacional), ]
+	classificação <- ""
+	if(imc < filtro$Peso_adequado_min){
+		classificação <- "baixo"
+	} else if (imc < filtro$Sobrepeso_min){
+		classificação <- "adequado"
+	} else if (imc < filtro$Obesidade){
+		classificação <- "sobrepeso"
+	} else if (imc >= filtro$Obesidade){
+		classificação <- "obesidade"
+	}
+	classificação
+}
+
+estado.nutricional.regular <- function(imc){
+	classificacao <- ""
+	if(imc < 19.8){
+		classificação <- "baixo"
+	} else if (imc < 25){
+		classificação <- "adequado"
+	} else if (imc < 30){
+		classificação <- "sobrepeso"
+	} else if (imc >= 30){
+		classificação <- "obesidade"
+	}
+	classificação
+}
+
+```
+
+# Ler arquivo
+
+```{r}
+tabela <- read.table(file = "tabela_gestacao_risco_com_idade_gestacional.csv",
+					 sep = "\t",
+					 header = TRUE, 
+					 dec = ",")
+```
+
+# Classificação IMC - atalah
+```{r}
+tabela$classificação_pre <- sapply(tabela$IMC.pré, 
+									 function(a){
+										 estado.nutricional.regular(a)
+									 })
+
+tabela$classificação_pos <- ""
+
+for (i in 1:nrow(tabela)){
+	tabela$classificação_pos[i] <- estado.nutricional(tabela$Idade.gestacional[i],
+														tabela$IMC.atual[i],
+														atalah)
+}
+
+
+```
+
+# Transformar variáveis em minúsculas e concertar outras variáveis
+```{r}
+tabela$Estado.civil <- factor(tolower(tabela$Estado.civil))
+tabela$Escolaridade <- factor(tolower(tabela$Escolaridade))
+tabela$classificação_pre <- as.factor(tabela$classificação_pre)
+tabela$classificação_pos <- as.factor(tabela$classificação_pos)
+
+tabela$classificação_pos <- factor(tabela$classificação_pos,
+									 levels(tabela$classificação_pos)[c(2,1,4,3)])
+
+tabela$classificação_pre <- factor(tabela$classificação_pre,
+									 levels(tabela$classificação_pre)[c(2,1,4,3)])
+```
+
+# Mostrar sumário depois de correções
+```{r}
+summary(tabela)
+
+table(tabela$classificação_pre, tabela$hipertensão)
+table(tabela$classificação_pre, tabela$diabetes)
+table(tabela$classificação_pre, tabela$outros)
+
+table(tabela$classificação_pos, tabela$hipertensão)
+table(tabela$classificação_pos, tabela$diabetes)
+table(tabela$classificação_pos, tabela$outros)
+```
+
+# Análise
+
+classificação imc
+
+```{r}
+
+summary(factor(tabela$classificação_pre))
+summary(factor(tabela$classificação_pos))
+
+
+png(file="class.png")
+par(mfrow=c(1,2))
+
+barplot(table(tabela$classificação_pre), 
+		ylab = "%",
+		main = "Pré-gravídico",
+		las=3)
+
+barplot(table(tabela$classificação_pos),
+		ylab = "%",
+		main = "Gravídico",
+		las=3)
+
+dev.off()
+
+ph1 <- ggplot(tabela, aes(x = classificação_pos, fill = hipertensão))+
+	geom_bar(position = "dodge")+
+	theme(axis.text.x=element_text(angle = -90, hjust = 0))+
+	xlab("Gestacional")+
+	ylab("Frequência")
+
+ph2 <- ggplot(tabela, aes(x = classificação_pre, fill = hipertensão))+
+	geom_bar(position = "dodge")+
+	theme(axis.text.x=element_text(angle = -90, hjust = 0))+
+	xlab("Pré-gestacional")+
+	ylab("Frequência")
+
+pd1 <- ggplot(tabela, aes(x = classificação_pos, fill = diabetes))+
+	geom_bar(position = "dodge")+
+	theme(axis.text.x=element_text(angle = -90, hjust = 0))+
+	xlab("Gestacional")+
+	ylab("Frequência")
+
+pd2 <- ggplot(tabela, aes(x = classificação_pre, fill = diabetes))+
+	geom_bar(position = "dodge")+
+	theme(axis.text.x=element_text(angle = -90, hjust = 0))+
+	xlab("Pré-gestacional")+
+	ylab("Frequência")
+
+grid.arrange(ph2, ph1, pd2, pd1, nrow=2)
+
+png(file="grid.png") 
+grid.arrange(ph2, ph1, pd2, pd1, nrow=2)
+dev.off()
+```
+
+
+```{r}
+plot(tabela$diabetes, tabela$IMC.pré, xlab = "diabetes", ylab = "IMC")
+t.test(tabela$IMC.pré ~ tabela$diabetes)
+```
+
+```{r}
+plot(tabela$hipertensão, tabela$IMC.pré, xlab = "hipertensão", ylab = "IMC")
+t.test(tabela$IMC.pré ~ tabela$hipertensão)
+```
+
+```{r}
+plot(tabela$diabetes, tabela$IMC.atual, xlab = "diabetes", ylab = "IMC atual")
+t.test(tabela$IMC.atual ~ tabela$diabetes)
+```
+
+```{r}
+plot(tabela$hipertensão, tabela$IMC.atual, xlab = "Hipertensão", ylab = "IMC atual")
+t.test(tabela$IMC.atual ~ tabela$hipertensão)
+```
+
+# Ganho ponderal médio por trimestre
+```{r}
+ganho.ponderal <- tabela$Peso.atual - tabela$Peso.pré
+
+
+tapply(X = ganho.ponderal, INDEX = paste(tabela$Trimestre, tabela$classificação_pre), FUN = mean)
+table(tabela$Trimestre, tabela$classificação_pre)
+```
+
+# Fatores de risco
+quiquadrado achou hipertensão estatísticamente significante
+```{r}
+library()
+
+agrupar.classificacao <- function(a){
+	out <- cbind(a[, 1] + a[, 2], a[, 3] + a[, 4])
+	colnames(out) <- c("baixo peso/entrofia", "sobrepeso/obesidade")
+	out
+}
+
+h1 <- table(tabela[, c("hipertensão", "classificação_pre")])
+h1 <- agrupar.classificacao(h1)
+h1
+chisq.test(h1)
+
+h2 <- table(tabela[, c("hipertensão", "classificação_pos")])
+h2 <- agrupar.classificacao(h2)
+h2
+chisq.test(h2)
+
+d1 <- table(tabela[, c("diabetes", "classificação_pre")])
+d1 <- agrupar.classificacao(d1)
+chisq.test(d1)
+
+d2 <- table(tabela[, c("diabetes", "classificação_pos")])
+d2 <- agrupar.classificacao(d2)
+chisq.test(d2)
+```
+
+
+

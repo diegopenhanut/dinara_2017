@@ -1,0 +1,103 @@
+Idade	Estado civil	Escolaridade	Numero de consultas	Trimestre	Teve parto	Patologias em partos anteriores	Amamentou	teve aborto	Altura	Peso pré	IMC pré	Peso atual	IMC atual	Suplemento 	Medicação	diabetes	hipertensão	anemia	outros	diabetes na família	hipertensão na família	obesidade na família	Exames de sangre
+29	Solteira	Fundamental Incompleto	10	3	sim	não	sim	não	1,48	45,2	20,64	59	26,94	sim	não	não	não	não	sim	sim	sim	não	sim
+20	Casada	Médio Incompleto	11	3	não	não	não	sim	1,6	96	37,50	108,6	42,42	sim	sim	não	não	não	sim	sim	sim	sim	sim
+35	Casada	Médio Incompleto	8	3	sim	sim	sim	sim	1,55	54	22,48	71,2	29,64	sim	não	não	não	não	sim	não	não	não	sim
+31	Casada	Fundamental	9	3	sim	não	sim	sim	1,6	61	23,83	68,5	26,76	sim	sim	não	não	não	sim	não	não	não	sim
+25	Casada	Médio	5	3	sim	sim	não	não	1,61	49	18,90	57,3	22,11	sim	não	não	não	não	sim	sim	sim	não	sim
+37	Casada	Fundamental Incompleto	8	3	sim	não	não	sim	1,59	78	30,85	74,2	29,35	sim	não	não	não	não	sim	não	sim	sim	sim
+35	Casada	Médio	8	3	não	não	não	não	1,6	54	21,09	66,7	26,05	sim	sim	não	não	não	sim	sim	sim	sim	sim
+28	Casada	Médio	10	3	sim	sim	sim	não	1,65	84	30,85	92	33,79	sim	não	não	não	não	sim	não	sim	não	sim
+27	Casada	Médio	8	3	sim	sim	sim	não	1,7	82	28,37	90	31,14	sim	sim	não	sim	não	não	sim	sim	não	sim
+29	Solteira	Fundamental Incompleto	10	3	sim	não	sim	não	1,62	67,3	25,64	72,2	27,51	sim	não	sim	não	não	não	sim	não	não	sim
+46	Casada	Médio	12	3	sim	não	sim	não	1,56	88,5	36,37	90,8	37,31	sim	não	sim	não	não	não	não	sim	não	sim
+24	Casada	Fundamental	9	3	sim	não	não	não	1,62	73	27,82	81,4	31,02	sim	sim	não	sim	não	não	não	sim	sim	não
+40	Casada	Médio	9	3	sim	sim	sim	sim	1,5	55,8	24,80	66,2	29,42	não	não	sim	não	não	não	sim	sim	não	não
+27	Casada	Superior Incompleto	12	3	sim	não	sim	não	1,61	66	25,46	76,7	29,59	sim	não	sim	não	não	não	não	não	não	sim
+43	Casada	Fundamental Incompleto	7	3	sim	não	sim	não	1,75	80	26,12	84	27,43	sim	não	não	sim	não	não	não	sim	sim	sim
+26	Casada	Médio	8	3	sim	não	sim	sim	1,53	61,6	26,31	70,6	30,16	sim	sim	sim	sim	não	não	não	sim	sim	sim
+20	Solteira	Médio	5	3	não	não	não	não	1,65	109	40,04	120,4	44,22	sim	sim	não	sim	não	não	não	sim	sim	não
+38	Casada	Fundamental Incompleto	11	3	sim	sim	sim	sim	1,6	72	28,13	94	36,72	sim	sim	não	sim	não	sim	não	não	não	sim
+23	Casada	Médio	7	2	sim	não	sim	não	1,54	72,5	30,57	77,5	32,68	sim	não	não	não	não	sim	sim	sim	não	não
+20	Casada	Médio Incompleto	7	2	não	não	não	não	1,56	65	26,71	61,7	25,35	sim	sim	não	não	não	sim	não	não	não	sim
+25	Casada	Médio	6	2	não	não	não	não	1,65	87,7	32,21	84,1	30,89	sim	não	não	não	não	sim	sim	sim	não	não
+30	Casada	Médio	7	2	não	não	não	não	1,5	62	27,56	63,8	28,36	sim	não	não	não	não	sim	não	não	não	sim
+22	Casada	Médio	2	2	não	não	não	não	1,63	71	26,72	76	28,60	sim	não	não	não	não	sim	sim	não	não	sim
+30	Solteira	Médio	4	2	sim	não	não	sim	1,68	104	36,85	111	39,33	não	não	não	sim	sim	sim	sim	não	não	sim
+20	Solteira	Fundamental	11	3	sim	não	sim	sim	1,57	56	22,72	71,5	29,01	sim	não	não	não	não	sim	sim	não	sim	sim
+36	Casada	Médio	3	2	sim	não	sim	não	1,5	54	24,00	60	26,67	sim	não	sim	não	não	sim	não	sim	não	sim
+23	solteira	Médio	7	2	sim	sim	sim	não	1,6	88	34,38	106	41,41	sim	sim	não	sim	não	não	sim	não	sim	sim
+33	casada	Médio	3	2	sim	não	sim	sim	1,5	67,5	30,00	68,5	30,44	sim	não	sim	não	não	não	sim	sim	sim	sim
+29	Casada	Médio	7	2	sim	sim	não	não	1,55	70	29,14	75	31,22	sim	sim	sim	não	não	não	não	sim	sim	sim
+32	Casada	Médio	6	2	não	não	não	sim	1,62	86	32,77	101	38,48	sim	sim	não	sim	não	não	sim	sim	sim	sim
+30	Casada	Médio Incompleto	7	2	sim	sim	sim	sim	1,57	61	24,75	76	30,83	sim	não	não	sim	não	não	não	sim	não	sim
+37	Casada	Médio	4	2	sim	sim	sim	não	1,54	54	22,77	63,8	26,90	sim	sim	não	sim	não	sim	não	sim	não	sim
+25	Casada	Fundamental Incompleto	5	2	sim	sim	não	não	1,55	69	28,72	85,5	35,59	não	não	não	sim	não	não	sim	sim	sim	não
+20	Casada	Médio Incompleto	4	2	não	não	não	não	1,5	57	25,33	54	24,00	sim	não	sim	não	não	sim	sim	não	não	sim
+38	Casada	Médio	3	2	sim	não	sim	não	1,55	63	26,22	68,5	28,51	sim	sim	não	sim	não	não	não	sim	não	sim
+38	Casada	Superior 	5	2	não	não	não	sim	1,48	79	36,07	85,1	38,85	sim	não	sim	não	não	não	sim	sim	sim	não
+25	Casada	Médio	5	2	sim	sim	sim	sim	1,6	75,5	29,49	73,9	28,87	sim	não	não	sim	não	não	sim	sim	sim	sim
+38	Casada	Médio	4	2	não	não	não	sim	1,68	70	24,80	73,5	26,04	sim	não	sim	não	não	sim	sim	sim	sim	sim
+20	Casada	Médio Incompleto	2	2	não	não	não	sim	1,55	80	33,30	74,4	30,97	sim	sim	sim	sim	não	não	sim	sim	sim	sim
+26	Solteira	Superior Incompleto	3	2	sim	sim	sim	não	1,58	69,3	27,76	71,8	28,76	sim	não	sim	não	não	não	sim	sim	não	sim
+32	Casada	Médio	3	2	sim	não	sim	sim	1,59	71	28,08	70,9	28,04	sim	não	sim	não	não	não	sim	sim	não	sim
+24	Casada	Médio	14	3	sim	sim	sim	não	1,45	84	39,95	86,4	41,09	sim	não	não	sim	não	sim	sim	sim	sim	sim
+23	Solteira	Médio Incompleto	5	3	sim	não	sim	não	1,52	53	22,94	60	25,97	sim	não	não	não	não	sim	sim	sim	não	sim
+28	Casada	Médio Incompleto	7	3	sim	não	sim	não	1,55	62	25,81	74	30,80	sim	não	não	não	não	sim	sim	sim	sim	sim
+29	Casada	Médio	7	3	sim	sim	sim	não	1,52	52	22,51	67	29,00	sim	sim	não	sim	não	sim	sim	sim	não	não
+21	Casada	Fundamental	9	3	sim	não	sim	não	1,55	58	24,14	77,1	32,09	sim	não	não	não	sim	sim	não	sim	não	sim
+24	Casada	Médio	4	2	sim	sim	sim	não	1,66	105	38,10	106	38,47	sim	sim	sim	sim	não	não	não	sim	sim	sim
+35	Solteira	Médio	2	2	sim	sim	sim	não	1,59	58	22,94	61	24,13	sim	não	não	sim	não	sim	sim	sim	não	não
+21	Casada	Médio	7	3	sim	não	sim	não	1,48	64,4	29,40	71,3	32,55	sim	não	sim	não	não	não	sim	sim	não	sim
+25	Casada	Fundamental Incompleto	12	3	sim	não	sim	sim	1,54	95	40,06	94	39,64	sim	não	não	não	não	sim	não	não	não	sim
+38	Casada	Médio	6	2	não	não	não	não	1,65	84	30,85	92,2	33,87	sim	sim	não	sim	não	não	não	sim	não	sim
+38	Casada	Superior incompleto	4	2	sim	sim	não	não	1,52	73	31,60	75	32,46	sim	sim	não	sim	não	não	sim	não	não	sim
+27	Casada	Médio	6	3	não	não	não	não	1,61	56	21,60	68	26,23	sim	não	não	não	não	sim	não	sim	não	sim
+38	Casada	Médio	8	3	sim	não	não	não	1,62	61,5	23,43	74	28,20	sim	não	não	não	não	sim	sim	não	não	sim
+34	Casada	Médio	6	2	sim	sim	sim	não	1,55	64	26,64	71,8	29,89	sim	não	sim	não	não	sim	sim	sim	não	sim
+24	Casada	Fundamental Incompleto	5	3	sim	não	sim	não	1,54	78,9	33,27	81	34,15	sim	sim	não	não	não	sim	não	sim	não	sim
+22	Solteira	Fundamental Incompleto	10	3	sim	não	sim	não	1,61	58	22,38	82	31,63	sim	não	sim	não	não	não	sim	sim	não	sim
+24	Solteira	Fundamental Incompleto	2	2	sim	sim	sim	sim	1,6	59	23,05	64	25,00	sim	não	não	sim	não	sim	não	não	não	não
+31	Casada	Média	8	3	sim	não	sim	não	1,55	88	36,63	94,1	39,17	sim	sim	sim	sim	não	sim	não	não	não	sim
+30	Casada	Média	5	2	sim	não	sim	sim	1,59	60	23,73	66,7	26,38	sim	não	não	não	não	sim	sim	sim	não	sim
+34	Casada	Superior Incompleto	2	2	sim	não	sim	não	1,66	86	31,21	87,4	31,72	sim	não	não	não	não	sim	não	não	sim	sim
+30	Casada	Médio	11	3	sim	não	sim	não	1,6	64	25,00	81	31,64	sim	não	não	não	não	sim	não	não	não	sim
+22	Solteira	Fundamental Incompleto	5	2	sim	não	sim	não	1,61	73	28,16	78	30,09	sim	não	não	não	não	sim	sim	sim	sim	sim
+23	Solteira	Médio	4	2	sim	não	sim	não	1,63	62	23,34	70	26,35	sim	não	não	não	não	sim	não	não	não	não
+38	Casada	Médio	3	2	sim	não	sim	não	1,54	44	18,55	47,7	20,11	sim	não	não	não	não	sim	não	sim	não	sim
+20	Solteira	Fundamental Incompleto	5	2	não	não	não	não	1,46	44,7	20,97	43	20,17	sim	não	não	não	não	sim	não	não	não	sim
+40	Casada	Superior Incompleto	5	2	sim	não	sim	não	1,54	52	21,93	65	27,41	sim	não	não	não	não	sim	não	sim	não	sim
+23	Casada	Médio Incompleto	7	3	sim	sim	não	não	1,5	60	26,67	70	31,11	não	não	não	não	não	sim	sim	não	não	não
+34	Casada	Médio Incompleto	6	2	sim	sim	sim	sim	1,5	70	31,11	75,1	33,38	sim	não	não	sim	não	não	não	sim	não	sim
+26	Casada	Médio	3	2	sim	sim	não	não	1,65	85	31,22	86,1	31,63	sim	não	não	não	não	sim	não	não	não	sim
+20	Casada	Médio	8	3	não	não	não	não	1,58	51	20,43	65	26,04	sim	não	não	não	não	sim	não	sim	não	sim
+40	Solteira	Médio Incompleto	3	2	sim	não	sim	sim	1,65	78	28,65	92,8	34,09	sim	não	não	sim	não	sim	sim	sim	não	sim
+24	Casada	Médio	2	1	não	não	não	não	1,57	63	25,56	57,1	23,17	sim	sim	não	não	não	sim	não	sim	sim	não
+29	Casada	Superior Incompleto	6	2	sim	sim	sim	não	1,63	62,6	23,56	72,7	27,36	sim	não	não	não	não	sim	sim	sim	não	sim
+39	Solteira	Fundamental 	5	2	sim	sim	sim	não	1,51	60,2	26,40	68,6	30,09	sim	sim	não	sim	não	não	não	sim	não	sim
+23	Casada	Médio Incompleto	5	2	sim	sim	não	não	1,6	120	46,88	117,6	45,94	sim	sim	não	sim	não	não	sim	sim	sim	sim
+23	Solteira	Médio	2	1	não	não	não	não	1,6	66	25,78	66,2	25,86	sim	não	não	não	não	sim	não	não	sim	não
+29	Casada	Médio	4	2	sim	sim	sim	não	1,52	98	42,42	89,3	38,65	sim	sim	não	sim	não	não	sim	sim	sim	não
+29	Casada	Fundamental	3	2	não	não	não	não	1,58	81,8	32,77	84,1	33,69	sim	sim	não	não	não	sim	sim	sim	sim	sim
+22	Casada	Médio Incompleto	11	3	sim	sim	sim	não	1,57	77	31,24	90,6	36,76	sim	sim	não	sim	não	não	sim	não	não	sim
+20	Solteira	Médio Incompleto	4	2	sim	sim	sim	não	1,57	55	22,31	57,7	23,41	sim	sim	não	sim	não	não	sim	sim	não	sim
+37	Casada	Fundamental Incompleto	7	3	sim	sim	sim	sim	1,6	59	23,05	77,4	30,23	não	não	não	não	não	sim	sim	não	não	sim
+27	Casada	Médio	6	3	sim	sim	não	não	1,61	91	35,11	97,5	37,61	sim	não	sim	sim	não	sim	sim	sim	sim	sim
+38	Casada	Analfabeta	12	3	sim	não	sim	não	1,44	55	26,52	77,3	37,28	sim	não	não	não	não	sim	não	sim	não	sim
+20	Casada	Fundamental Incompleto	10	3	sim	não	sim	não	1,5	42	18,67	55,4	24,62	sim	não	não	sim	sim	não	não	não	não	sim
+40	Casada	Fundamental 	4	2	sim	não	sim	sim	1,43	68	33,25	75	36,68	sim	não	não	não	não	sim	sim	não	não	não
+26	Solteira	Médio	5	3	não	não	não	não	1,67	84	30,12	88	31,55	sim	não	não	sim	não	não	sim	não	não	sim
+37	Casada	Médio	5	3	sim	não	sim	não	1,65	62	22,77	71,6	26,30	sim	não	não	não	não	sim	sim	sim	não	sim
+38	Casada	Médio	5	2	sim	não	sim	não	1,48	74,5	34,01	77,3	35,29	sim	sim	não	não	não	sim	sim	sim	não	não
+20	Casada	Médio	12	3	não	não	não	não	1,6	95,7	37,38	104	40,63	sim	sim	sim	sim	não	não	sim	sim	não	sim
+28	Casada	Fundamental Incompleto	5	2	sim	não	sim	sim	1,47	49	22,68	52	24,06	sim	sim	sim	não	sim	não	não	não	não	sim
+31	Solteira	Médio	8	3	sim	sim	sim	sim	1,59	72,4	28,64	81	32,04	não	sim	não	sim	não	não	não	sim	não	sim
+38	Casada	Médio	9	2	não	não	não	não	1,59	71	28,08	83,6	33,07	sim	sim	não	sim	não	sim	sim	sim	não	sim
+25	Casada	Médio	5	2	não	não	não	não	1,67	70	25,10	74	26,53	não	não	não	sim	não	sim	não	sim	não	sim
+35	Casada	Médio	4	2	sim	sim	não	não	1,57	88	35,70	86	34,89	sim	sim	não	sim	não	não	sim	sim	não	sim
+26	Casada	Médio	8	2	sim	sim	sim	não	1,55	67	27,89	79	32,88	sim	sim	não	sim	não	não	sim	sim	sim	sim
+30	Casada	Médio	9	3	sim	sim	sim	não	1,55	94	39,13	100,6	41,87	sim	não	sim	não	não	não	sim	sim	não	sim
+26	Casada	Médio	9	3	sim	não	não	não	1,61	70	27,01	85,4	32,95	sim	não	sim	não	não	não	sim	sim	sim	sim
+26	Casada	Médio	14	3	não	não	não	sim	1,56	89	36,57	99,8	41,01	sim	não	não	sim	não	sim	não	sim	não	sim
+25	Casada	Superior	10	2	não	não	não	não	1,61	68	26,23	69,6	26,85	sim	sim	sim	não	não	não	sim	sim	não	sim
+34	Casada	Médio	8	2	não	não	não	sim	1,64	96,8	35,99	100,8	37,48	sim	sim	não	sim	não	não	não	sim	sim	sim
+44	Casada	Fundamental Incompleto	9	3	sim	não	sim	sim	1,6	84,5	33,01	88,5	34,57	sim	sim	não	sim	não	sim	sim	sim	sim	sim
